@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  	<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bower_components/jquery-ui/themes/base/jquery-ui.css"/>
+  </head>
+
+  <body>
+    <h1>Dialogtester</h1>
+  
+
+	<div id="avd1" ng-controller="mainCtrl">
+		<h3>En avdelning</h3>
+		<input type="text" ng-model="person.name">
+		<span ng-bind="person.name"></span>
+		<div><button id="oppnadialog1">Öppna dialog 1</button></div>
+		<div><button id="oppnadialog2">Öppna dialog 2</button></div>
+		
+	</div>
+
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.js"></script>
+    <script type="text/javascript" src="bower_components/jquery-ui/ui/jquery-ui.js"></script>
+    <script type="text/javascript" src="bower_components/angular/angular.js"></script>
+	<script type="text/javascript" data-main ="main.js" src="bower_components/requirejs/require.js"></script>
+  </body>
+
+</html>
